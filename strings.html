@@ -12,21 +12,34 @@
     </body>
     <script>
         var output = document.querySelector("p");
-
+        output.textContent = 10;
         /* STEP 1: Creating Strings */
-
+        var step1 = "Hello! How are you?";
+        output.textContent = step1;
         // Note - whether you use 'single' or "double" quotes is a personal preference - try to be consistent
 
         /* STEP 2: Escaping Characters */
-
+        var step2 = 'Hello! How are you? Everything\'s "great".';
+        output.textContent = step2;
         /* STEP 3: Concatenation */
-
+        var step3 = "hello";
+        var step3a = "world";
+        var step3b = 23;
+        output.textContent = step3 + " " + step3a;
+        output.textContent = step3 + step3b;
+        console.log(typeof (step3 + step3b));
         /* STEP 4: Numbers and Strings */
 
         // numbers can be converted to strings
-
+        step4 = "22";
+        step4a = 20;
+        output.textContent = step4 + step4a;
         // strings can be converted to numbers, too
-
+        step4b = Number(step4);
+        output.textContent = step4a + step4b;
         // and back again, if we want
+        var step4c = 10;
+        var step4d = 15;
+        output.textContent = step4c.toString() + String(step4d);
     </script>
 </html>
